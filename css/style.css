@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*  CSS por Etiqueta */
+body {
+  text-align: center;
+  margin: 0;
+  /* tipo fuente google */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* class para modelo de cajas  select universal*/
+
+body * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+/* css peso titulos */
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  /* margin: 18px 20px 20px 0px; */
+}
+
+
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 18px 0px;
+
+}
+
+h3 {
+
+  margin: 18px 0px;
+  letter-spacing: 5px;
+}
+
+.titulo {
+  color: #464646;
+  letter-spacing: 10px;
+}
+
+
+
+
+/*  inicio CSS para estados de enlaces*/
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #504c4c;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+
+/*  Termino CSS para estados de enlaces*/
+
+
+
+
+/* Inicio Grid Layout */
+#grid-container {
+  height: fit-content;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+
+    "nav          nav         nav         nav"
+    "header       header      header      header"
+    "marca        marca       marca       marca "
+    "descripcion  descripcion descripcion descripcion"
+    "Video        Video       Video       Video"
+    "footer       footer      footer      footer";
+
+    /* outline: 2px solid red; */
+}
+
+/* .border {
+  outline: 2px solid rgb(0, 255, 0);
+} */
+
+header {
+  grid-area: header;
+  /* outline: 2px solid red; */
+}
+
+section {
+  width: auto;
+  /* outline: 2px solid red; */
+}
+
+section#marca {
+  grid-area: marca;
+/* outline: 2px solid red; */
+}
+
+section#descripcion {
+  grid-area: descripcion;
+
+}
+
+section#video {
+  grid-area: video;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+section div a {
+  /* margin: 50px; */
+  align-items: center;
+}
+
+section p {
+  justify-content: center;
+  line-height: 30px;
+  font-size: 16px;
+  /* margin: 30px; */
+}
+
+/* Termino Grid Layout */
+
+/* inicio flexbox */
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+  /* padding: 30px;
+  margin: 30px; */
+  /* outline: 2px solid red; */
+  justify-content: space-evenly;
+}
+
+.flexcontainer div {
+  /* border: 2px solid black; */
+  margin: 10px;
+}
+
+.flexcontainer div p {
+  align-content: space-between;
+}
+.flexcontainer div a, h2 {
+  align-content: space-between;
+}
+
+
+/* termino flexbox */
+
+.item-1 {
+  /* background-color: pink;
+  border: 4px solid black; */
+  grid-row: 5 / 6;
+  grid-column: 2 / 4;
+  grid-row-end: auto;
+}
+
+.centrado-grid-texto {
+  /* background-color: pink;
+  border: 4px solid black; */
+  grid-row: 4 / 5;
+  grid-column: 2 / 4;
+  grid-row-end: auto;
+}
+
+/* Termino Grid Layout */
+
+/* CSS PARA NAV */
+.menu {
+  background: #000f08;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0;
+
+}
+
+.menu a {
+  /* background: #ffffff; */
+  text-decoration: none;
+}
+
+nav {
+  grid-area: nav;
+  text-align: left;
+  padding: 1.25em 4rem;
+  position: sticky;
+  height: 84px;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  height: 84px;
+  margin-right: 100px;
+}
+
+nav li {
+  text-decoration: none;
+}
+
+nav ul li {
+  margin: 0 1em;
+  text-decoration: none;
+  right: 0;
+  letter-spacing: 5px;
+}
+
+nav ul li a:hover {
+  color: #ee3535;
+}
+
+.menu>div {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+/* Inicio Nav Burger */
+/* s--------------------------------------------- */
+/* Termino Nav Burger */
+
+
+/* termino CSS PARA NAV */
+
+/* css header principal */
+.hero-section {
+  /*calculo para que el "header" me ocupe unicamente '100vh' asi que le resto el alto de <nav>*/
+  height: calc(100vh - 84px);
+  text-align: right;
+  background-image: url('../assets/Hero-principal.jpg');
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 10px;
+
+}
+
+.hero-section h1 {
+  font-size: 40px;
+}
+
+.hero-section h2 {
+  font-size: 30px
+}
+/* termino hero section principal index */
+
+/* Inicio Hero peugeot */
+.hero-section-peugeot {
+  height: calc(100vh - 84px);
+  text-align: right;
+  background-image: url('../assets/hero-peugeot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.hero-section-peugeot h1 {
+  font-size: 40px;
+}
+
+.hero-section-peugeot h2 {
+  font-size: 30px
+}
+/* Termino Hero peugeot */
+
+
+/* Inicio Hero index */
+.hero-section-haval {
+  height: calc(100vh - 84px);
+  text-align: right;
+  background-image: url('../assets/hero-haval.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  margin-bottom: 40px;
+  
+
+}
+
+.hero-section-haval h1 {
+  font-size: 40px;
+}
+
+.hero-section-haval h2 {
+  font-size: 30px
+}
+
+/* Termino Hero index */
+
+/* inicio Hero mazda */
+.hero-section-mazda {
+  height: calc(100vh - 84px);
+  text-align: right;
+  background-image: url('../assets/hero-mazda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.hero-section-mazda h1 {
+  font-size: 40px;
+}
+
+.hero-section-mazda h2 {
+  font-size: 30px
+}
+
+/* Termino Hero mazda */
+
+/* Inicio Hero suzuki */
+.hero-section-suzuki {
+  height: calc(100vh - 84px);
+  text-align: right;
+  background-image: url('../assets/hero-suzuki.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  
+  margin-bottom: 40px;
+}
+
+.hero-section-suzuki h1 {
+  font-size: 40px;
+}
+
+.hero-section-suzuki h2 {
+  font-size: 30px
+}
+
+/* Termino Hero suzuki */
+
+/* Inicio Hero contacto */
+.hero-section-contacto {
+  height: calc(100vh - 84px);
+  text-align: Center;
+  background-image: url('../assets/hero-contacto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  width: 100%;
+  /* margin-bottom: 40px; */
+}
+
+.hero-section-contacto h2 {
+  font-size: 40px;
+  align-content: center;
+}
+
+.hero-section-contacto h3 {
+  font-size: 30px;
+  align-content: center;
+  padding-bottom: 20px;
+
+}
+
+/* Termino Hero contacto */
+
+.formulario {
+  background: #707070;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 3%;
+  padding: 15px 5px;
+}
+
+
+.imagen-fluida {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+
+
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  margin: 0 30px 0 auto;
+  text-align: center;
+  justify-content: center;
+  /* background: red; */
+  /* border: 2px solid red; */
+}
+
+
+.contenedor-formulario {
+  padding-top: 10px;
+  width: 40%;
+  margin: 0 auto 0 auto;
+  /* background: red; */
+}
+
+.contenedor h2 {
+  text-align: center;
+}
+
+p {
+  margin: 15px;
+  padding: 10px;
+  line-height: 140%;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  width: auto;
+}
+
+
+footer {
+  grid-area: footer;
+  width: auto;
+  background: #000f08;
+  color: #ffffff;
+  position: sticky;
+  width: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* border: 2px solid blue; */
+
+}
+
+/*Inicio centrar la etiqueta <h1> header*/
+.hero-section>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.hero-section-peugeot>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.hero-section-mazda>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.hero-section-suzuki>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.hero-section-haval>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+/*termino centrar la etiqueta <h1> header*/
+
+@media screen and (max-width: 968px) {
+  #grid-container {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+      "nav          nav         nav"
+      "header       header      header"
+      "marca        marca       marca"
+      "descripcion  descripcion descripcion"
+      "Video        Video       Video"
+      "footer       footer      footer";
+  }
+  .flexcontainer{
+    flex-direction: column;
+  }
+   
+  .item-1 {
+    /* background-color: pink;
+    border: 4px solid black; */
+    grid-row: 5 / 6;
+    grid-column: 1 / 4;
+    grid-row-end: auto;
+  }
+  section p iframe{
+    width: auto;
+    height: auto;
+  }
+}
+.flexcontainer div {
+  /* border: 2px solid black; */
+  margin: 0px;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 425px) {
+  #grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "nav"
+      "header"
+      "marca"
+      "descripcion"
+    
+      "footer"; 
+  }
+  section p iframe{
+    width: auto;
+    height: auto;
+  }
+
+
+  .flexcontainer{
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .flexcontainer div {
+    /* border: 2px solid black; */
+    margin: 0px;
+}
+
+ #Video {
+   display: none;
+ }
+ 
+ h2{
+   font-size: 1.3em;
+ }
+}

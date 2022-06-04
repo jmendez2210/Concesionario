@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Formulario Contacto</title>
+
+  <!-- letras google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Para llamar el Codigo CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- inicio navbar -->
+  <nav class="menu">
+    <ul>
+      <li class="logo"><a href="../index.html"> <img src="../assets/logo-gray.png" alt="Logo Dumay"></a></li>
+      <li><a href="../index.html">INICIO</a></li>
+      <li><a href="./Peugeot.html">PEUGEOT</a></li>
+      <li><a href="./Mazda.html">MAZDA</a></li>
+      <li><a href="./Suzuki.html">SUZUKI</a></li>
+      <li><a href="./Haval.html">HAVAL</a></li>
+
+    </ul>
+  </nav>
+  <!-- termino navbar -->
+
+  <!-- imagen principal maqueta, header, css class -->
+  <header class="hero-section-contacto">
+    <div>
+      <div>
+        <h2>DESEO RECIBIR COTIZACIÓN</h2>
+        <h3>Animate, realiza tu cotizacion aquí</h3>
+
+        <Div class="contenedor">
+          <table class="contenedor-formulario formulario"">
+                      <tr>
+                          <td>&nbsp;</td>
+                          <td>
+                            <div id=" after_submit">
+        </div>
+        <form id="contact_form" action="#" method="get" enctype="multipart/form-data">
+          <div class="row">
+            <label for="name">Ingrese su Nombre:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+
+          <div class="row">
+            <label class="required" for="email">E-Mail:</label><br />
+            <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="message">Ingrese un Mensaje:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+          <div><input id="submit_button" type="submit" value="Enviar" /></div>
+        </form>
+      </div>
+      </td>
+      <td>&nbsp;</td>
+      </tr>
+      </table>
+    </Div>
+    </div>
+  </header>
+  <!-- termino Header -->
+  <!-- Inicio Footer -->
+  <footer>
+    <div>
+      <a href=""><img src="../assets/logo-gray.png"" alt=""></a>
+      </div>
+      <div>
+        <p style=" text-align: center;">Dumay. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- termino Footer -->
+</body>
+
+</html>
