@@ -46,6 +46,10 @@ h3 {
   letter-spacing: 10px;
 }
 
+.row {
+  justify-content: center;
+}
+
 
 
 
@@ -71,7 +75,7 @@ a:visited {
 
 
 /* Inicio Grid Layout */
-#grid-container {
+/* #grid-container {
   height: fit-content;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
@@ -86,16 +90,16 @@ a:visited {
     "footer       footer      footer      footer";
 
     /* outline: 2px solid red; */
-}
+/* } */
 
 /* .border {
   outline: 2px solid rgb(0, 255, 0);
 } */
 
-header {
-  grid-area: header;
+/* header {
+  /* grid-area: header; */
   /* outline: 2px solid red; */
-}
+/* } */ 
 
 section {
   width: auto;
@@ -120,6 +124,12 @@ section#video {
 section div a {
   /* margin: 50px; */
   align-items: center;
+}
+
+section div lu li {
+  /* margin: 50px; */
+  align-items: center;
+  text-decoration: none;
 }
 
 section p {
@@ -188,7 +198,7 @@ section p {
   text-decoration: none;
 }
 
-nav {
+/* nav {
   grid-area: nav;
   text-align: left;
   padding: 1.25em 4rem;
@@ -197,8 +207,8 @@ nav {
   top: 0;
   z-index: 1;
   width: 100%;
-}
-
+} */
+/* 
 nav ul {
   list-style-type: none;
   display: flex;
@@ -209,7 +219,7 @@ nav ul {
   position: relative;
   height: 84px;
   margin-right: 100px;
-}
+} */
 
 nav li {
   text-decoration: none;
@@ -222,7 +232,7 @@ nav ul li {
   letter-spacing: 5px;
 }
 
-nav ul li a:hover {
+navbar ul li a:hover {
   color: #ee3535;
 }
 
@@ -237,10 +247,10 @@ nav ul li a:hover {
   box-sizing: border-box;
 }
 
-/* Inicio Nav Burger */
-/* s--------------------------------------------- */
-/* Termino Nav Burger */
-
+.listamarca {
+  list-style: none;
+  text-decoration: none;
+}
 
 /* termino CSS PARA NAV */
 
@@ -399,12 +409,6 @@ nav ul li a:hover {
 }
 
 
-.imagen-fluida {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  align-content: center;
-}
 
 
 
@@ -505,7 +509,7 @@ footer {
 /*termino centrar la etiqueta <h1> header*/
 
 @media screen and (max-width: 968px) {
-  #grid-container {
+  /* #grid-container {
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: auto auto auto;
     grid-template-areas:
@@ -515,7 +519,7 @@ footer {
       "descripcion  descripcion descripcion"
       "Video        Video       Video"
       "footer       footer      footer";
-  }
+  } */
   .flexcontainer{
     flex-direction: column;
   }
@@ -631,7 +635,7 @@ h2{
 
 
 @media screen and (max-width: 425px) {
-  #grid-container {
+  /* #grid-container {
     grid-template-columns: 1fr;
     grid-template-areas: 
       "nav"
@@ -640,7 +644,7 @@ h2{
       "descripcion"
     
       "footer"; 
-  }
+  } */
   section p iframe{
     width: auto;
     height: auto;
