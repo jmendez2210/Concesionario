@@ -235,6 +235,9 @@ nav ul li {
 navbar ul li a:hover {
   color: #ee3535;
 }
+ .nav-link:hover {
+  color: #ee3535;
+}
 
 .menu>div {
   position: relative;
