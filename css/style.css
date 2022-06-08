@@ -198,7 +198,7 @@ section p {
   text-decoration: none;
 }
 
-/* nav {
+nav {
   grid-area: nav;
   text-align: left;
   padding: 1.25em 4rem;
@@ -208,7 +208,7 @@ section p {
   z-index: 1;
   width: 100%;
 } */
-/* 
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -219,7 +219,7 @@ nav ul {
   position: relative;
   height: 84px;
   margin-right: 100px;
-} */
+}
 
 nav li {
   text-decoration: none;
@@ -412,7 +412,16 @@ navbar ul li a:hover {
 }
 
 
+.carousel-item img {
+  max-height: 800px;
+  object-fit: cover;
+}
 
+.galeria-peugeot {
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
 
 
 
