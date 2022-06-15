@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 
 /*  CSS por Etiqueta */
 body {
@@ -244,11 +244,9 @@ navbar ul li a:hover {
 }
 
 .logo {
-  position: absolute;
-  left: 30px;
-  width: fit-content;
-  box-sizing: border-box;
-}
+
+    object-fit: cover;
+  }
 
 .listamarca {
   list-style: none;

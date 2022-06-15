@@ -1,0 +1,19 @@
+{
+  "name": "concesionario",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmendez2210/Concesionario.git"
+  },
+  "author": "jorge mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmendez2210/Concesionario/issues"
+  },
+  "homepage": "https://github.com/jmendez2210/Concesionario#readme"
+}
