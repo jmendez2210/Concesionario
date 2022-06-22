@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 @import"./parciales/reset";
+@import"./parciales/mixins";
+@import"./parciales/Base/Titulos";
+@import "./parciales/Base/animaciones";
+@import"./parciales/Base/contenido";
 @import"./parciales/Layout/footer";
-@import"./parciales/Titulos";
-@import "./parciales/animaciones";
-@import"./parciales/contenido";
-
   

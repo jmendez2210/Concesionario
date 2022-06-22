@@ -6,55 +6,47 @@
   text-decoration: none;
 }
 
-footer {
-  width: auto;
-  background: #000f08;
-  color: #ffffff;
-  position: -webkit-sticky;
-  position: sticky;
-  width: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* border: 2px solid blue; */
-}
-
-footer a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* inicio Titulos */
-/* fin Titulos */
-/*Inicio Parrafos*/
-/*Termino Parrafos*/
 .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 div h1 {
   font-weight: bold;
   font-size: 3rem;
+  margin: 18px 0px;
+  letter-spacing: 10px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 div h2 {
   font-weight: 700;
   font-size: 2.5rem !important;
   margin: 18px 0px;
+  letter-spacing: 10px;
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 div h3 {
   margin: 18px 0px;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  letter-spacing: 5px !important;
 }
 
 div .titulo {
   color: #464646;
+  margin: 18px 0px;
   letter-spacing: 10px;
+  text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -151,10 +143,10 @@ div .titulo {
 }
 
 /* TERMINO ANIMACIONES */
-/* inicio Titulos */
-/* fin Titulos */
-/*Inicio Parrafos*/
-/*Termino Parrafos*/
+section h2 {
+  color: #DFE3E7;
+}
+
 section p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -165,11 +157,11 @@ section p {
   font-weight: 400;
   font-style: normal;
   width: auto;
+  color: #606365;
 }
 
-section iframe {
-  width: auto;
-  height: auto;
+section li {
+  color: #606365;
 }
 
 section .listamarca {
@@ -177,5 +169,26 @@ section .listamarca {
   text-decoration: none;
   text-align: center;
   font-size: 1.5rem;
+}
+
+footer, footer p {
+  width: auto;
+  color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* border: 2px solid blue; */
+}
+
+footer a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  text-align: center;
+  font-size: 25px;
 }
 /*# sourceMappingURL=style-sass.css.map */

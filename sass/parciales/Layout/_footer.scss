@@ -1,15 +1,18 @@
 footer {
     width: auto;
-    background: #000f08;
     color: #ffffff;
     position: sticky;
-    width: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     /* border: 2px solid blue; */
-
     a {
       align-items: center;
+    }
+    p{
+      text-align: center;
+      @extend p;
+      font-size: 25px;
+      @extend footer;
     }
   
   }
