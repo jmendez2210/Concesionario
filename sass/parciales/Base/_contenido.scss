@@ -1,0 +1,29 @@
+@import "../Utilities/variables";
+section{
+h2{
+    color: map-get($grayscale, "200");
+}
+
+p {
+    justify-content: center;
+    line-height: 140%;
+    text-align: justify;
+    font-size:$font-texto;
+    font-weight: 400;
+    font-style: normal;
+    width: auto;
+    color: map-get($grayscale, "700");
+  }
+li{
+    color: map-get($grayscale, "700");
+}
+
+  
+  .listamarca {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: $font-texto;
+    
+  }
+}
