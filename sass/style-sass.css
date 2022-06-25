@@ -148,12 +148,10 @@ section h2 {
 }
 
 section p {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   line-height: 140%;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
   width: auto;
@@ -168,14 +166,16 @@ section .listamarca {
   list-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-footer, footer p {
+footer {
   width: auto;
+  background: #000f08;
   color: #ffffff;
   position: -webkit-sticky;
   position: sticky;
+  width: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   /* border: 2px solid blue; */
@@ -185,10 +185,5 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-footer p {
-  text-align: center;
-  font-size: 25px;
 }
 /*# sourceMappingURL=style-sass.css.map */
