@@ -153,7 +153,7 @@ section p {
           justify-content: center;
   line-height: 140%;
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   width: auto;
@@ -168,7 +168,7 @@ section .listamarca {
   list-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 footer, footer p {
