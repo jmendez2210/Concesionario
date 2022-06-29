@@ -27,3 +27,10 @@ li{
     
   }
 }
+
+@media screen and (max-width: 425px) {
+  section p iframe{
+    width: auto;
+    height: auto;
+  }
+  }
