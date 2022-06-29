@@ -4,4 +4,8 @@
     text-align: center;
     align-content: center;
 }
+
+@mixin tituloh3 {
+    font-size: 1.5rem !important;
+}
 // reutilice mixin para los titulos

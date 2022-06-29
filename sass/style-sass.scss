@@ -9,13 +9,28 @@
 
 
 @media screen and (max-width: 425px) {
+    nav div img{
+        animation: none !important;
+    }
+
+    .img-fluid {
+        max-width: auto;
+        height: auto;
+    }
     section p iframe{
       width: 100%;
       height: auto;
     }
+    div h2 {
+        font-size: 1.5rem !important;
+    }
+    div h2 {
+        font-size: 1.3rem !important;
     }
 
-    @media only screen and (max-width: 600px) {
+    }
+
+@media only screen and (max-width: 992px) {
         section p iframe{
             width: 100%;
             height: auto;

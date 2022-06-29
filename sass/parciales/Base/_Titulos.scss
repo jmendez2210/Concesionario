@@ -17,8 +17,8 @@ div {
       }
 
     h3{
-      @include titulos-h1y2;
         letter-spacing: 5px !important;
+        @include tituloh3;
     }
       .titulo {
         color: #464646;
