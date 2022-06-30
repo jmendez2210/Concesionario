@@ -22,12 +22,14 @@
       height: auto;
     }
     div h2 {
-        font-size: 1.5rem !important;
+        font-size: 4vw !important;
     }
-    div h2 {
-        font-size: 1.3rem !important;
+    div h3 {
+        font-size: 3.5vw !important;
     }
-
+    header {
+        padding-top: 30px;
+      }
     }
 
 @media only screen and (max-width: 992px) {
@@ -35,4 +37,4 @@
             width: 100%;
             height: auto;
           }
-      }   
+      } 
