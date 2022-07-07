@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 @import"./parciales/reset";
+// @import "./parciales/Utilities/funciones";
 @import"./parciales/mixins";
 @import"./parciales/Base/Titulos";
 @import "./parciales/Base/animaciones";
@@ -17,6 +18,7 @@
         max-width: auto;
         height: auto;
     }
+
     section p iframe{
       width: 100%;
       height: auto;
